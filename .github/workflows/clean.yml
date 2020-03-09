@@ -16,4 +16,4 @@ jobs:
         BRANCHES: true
         TAGS: true
         PULLS: true
-      uses: davidcraig/action-clean-git@0.0.1
+      uses: davidcraig/action-clean-git@master
