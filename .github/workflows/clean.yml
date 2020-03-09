@@ -2,3 +2,14 @@ name: davidcraig/action-clean-git
 on:
   schedule:
     - cron:  '0 0 * * *'
+jobs:
+  clean:
+    name: 'clean'
+    runs-on: ubuntu-latest
+    steps:
+    - name: clean repository
+      env:
+        BRANCHES: true
+        TAGS: true
+        PULLS: true
+      uses: davidcraig/action-clean-git@0.0.1
