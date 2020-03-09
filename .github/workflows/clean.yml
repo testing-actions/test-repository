@@ -1,0 +1,4 @@
+name: davidcraig/action-clean-git
+on:
+  schedule:
+    - cron:  '0 0 * * *'
